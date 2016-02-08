@@ -332,7 +332,9 @@ div img
     right: 0;
 /*    bottom: 0;
 */    left: 0;
-    margin-top: 0.5px;
+        width: 100%;
+        height: 90vh;
+    /*margin-top: 0.5px;*/
     background-color: #8A2908;
   
     /*background-color: #d8d8d8; */
@@ -365,27 +367,19 @@ div img
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*--------------SIXTH DIV STYLE SHEET START-------------------*/
 #sixth
 {
-    position: fixed;
+    position: relative;
     z-index: 3;
-    display: none;
-    top: 90vh;
+    /*display: none;*/
+    /*top: 90vh;*/
+    height: 10vh;
+    width: 100%;
     right: 0;
     bottom: 0;
     left: 0;
+    /*margin-top:80vh;*/
     background-color: #151515;
 }
 #sixth a{
