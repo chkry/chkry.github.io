@@ -68,10 +68,10 @@
        /* Sixth division visibility scrolling */
       $(window).scroll(function() {
            if ($('#main').visible(true) == true && $('#third').visible(true) == false) {
-               // console.log("chakri showing");
+                console.log("main now checking showing");
                $("#sixth").css("display", "none");
            } else {
-               // console.log("chakri not showing");
+                console.log("6th now chae not showing");
                if ($('#third').visible()==false && $('#fourth').visible(true) && $('#fifth').visible(true)) {
                    $("#sixth").show();
                    if($('#third').visible(true)){
