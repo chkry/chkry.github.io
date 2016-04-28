@@ -12,7 +12,7 @@
            }, 3000);
        });
 
-       $("#blogButton").click(function() {
+       $("#aboutButton").click(function() {
            $('html, body').animate({
                scrollTop: $("#fourth").offset().top
            }, 3000);
@@ -24,11 +24,11 @@
            }, 6000);
        });
 
-       $("#social").click(function() {
-           $('html, body').animate({
-               scrollTop: $("#fourth").offset().top
-           }, 3000);
-       });
+//       $("#social").click(function() {
+//           $('html, body').animate({
+//               scrollTop: $("#fourth").offset().top
+//           }, 3000);
+//       });
 
        //Srolling to division functions.........................................
        var n = $("#main div").length;
