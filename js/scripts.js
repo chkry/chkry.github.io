@@ -1,11 +1,12 @@
-   $(document).ready(function() {
+   $("document").ready(function() {
 
+       //jQuery code for all the page
        var main = $('#main');
        var second = $('#second');
        var third = $('#third');
        var fourth = $('#fourth');
        var fifth = $('#fifth');
-
+       var main = $('#main');
 
        $("#dream").fadeIn(1400);
        $("#design").fadeIn(2200);
@@ -17,7 +18,7 @@
        $("#logo").click(function() {
            $('html, body').animate({
                scrollTop: third.offset().top
-           }, 3000);
+           }, 1000);
        });
 
        $("#aboutButton").click(function() {
@@ -40,8 +41,8 @@
 
        //Srolling to division functions.........................................
        var n = $("#main div").length;
-       var g = $("#second").length;
-       var f = $("#third").length;
+       var g = second.length;
+       var f = third.length;
 
 
 
@@ -63,5 +64,52 @@
            }
        });
 
+//---------------------------AJAX for tumblr API --------------------[START]---
 
-   });
+       getJSONDataTumblr();
+
+
+
+   }); //End of Document Ready Function
+
+
+
+
+
+
+
+
+
+
+//---------------------------AJAX for tumblr API --------------------[START]---
+function getJSONDataTumblr() {
+
+    var tumblrAPI = "http://api.tumblr.com/v2/blog/chkry.tumblr.com/posts/photo?callback=?";
+
+    $.getJSON(tumblrAPI, {
+        api_key: 'ivofJBCOeNzCg3quY2l7PxnMm0w1bCQb7e3X84erImRG9stL1X'
+        , tags: "chkry",
+        limit:21
+    }, successFn);
+
+}
+
+
+
+function successFn(result) {
+    console.log("Success function initated");
+    console.log(result);
+    $.each(result.response.posts, function (i, item) {
+            console.log(result.response.posts);
+            $.each(item.photos, function (j, item1) {
+                    var cdn = item1.alt_sizes[2].url;
+                    $("<img>").attr("src",cdn).appendTo("#tPhotos");
+//                console.log(item1.original_size.url);
+                });
+//                if (i === 50) {
+//                        return false;
+//                    }
+            });
+    }
+
+//---------------------------AJAX for tumblr API --------------------[END]---
