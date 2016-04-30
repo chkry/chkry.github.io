@@ -1,4 +1,12 @@
    $(document).ready(function() {
+
+       var main = $('#main');
+       var second = $('#second');
+       var third = $('#third');
+       var fourth = $('#fourth');
+       var fifth = $('#fifth');
+
+
        $("#dream").fadeIn(1400);
        $("#design").fadeIn(2200);
        $("#develop").fadeIn(2800);
@@ -8,19 +16,19 @@
        //Srolling to division functions.........................................
        $("#logo").click(function() {
            $('html, body').animate({
-               scrollTop: $("#third").offset().top
+               scrollTop: third.offset().top
            }, 3000);
        });
 
        $("#aboutButton").click(function() {
            $('html, body').animate({
-               scrollTop: $("#fourth").offset().top
+               scrollTop: fourth.offset().top
            }, 3000);
        });
 
        $("#descri").click(function() {
            $('html, body').animate({
-               scrollTop: $("#fourth").offset().top
+               scrollTop: fourth.offset().top
            }, 6000);
        });
 
@@ -37,21 +45,20 @@
 
 
 
-
        $(window).scroll(function() {
-           if ($('#second').visible(true) && $('#third').visible(true) && $("#fourth").visible(true) == false) {
-               $("#fifth").css("display", "none");
+           if (second.visible(true) && third.visible(true) && fourth.visible(true) == false) {
+               fifth.css("display", "none");
            }
        });
 
        $(window).scroll(function() {
-           if ($('#main').visible(true) == true && $('#third').visible(true) == false) {
+           if (main.visible(true) == true && third.visible(true) == false) {
                // console.log("showing");
-               $("#fifth").css("display", "none");
+               fifth.css("display", "none");
            } else {
                // console.log("not showing");
-               if ($('#third').visible(true) && $('#fourth').visible(true)) {
-                   $("#fifth").show();
+               if (third.visible(true) && fourth.visible(true)) {
+                   fifth.show();
                }
            }
        });
