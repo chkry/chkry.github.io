@@ -99,10 +99,10 @@
       text-align: center;
   }
   
-  .paddingLogo {
-      padding-top: 30vh;
-      padding-bottom: 70vh;
-  }
+#logo_main {
+    padding-top: 30vh;
+    padding-bottom: 70vh;
+}
   
   .hover {
       border: 1px solid #f3f781;
