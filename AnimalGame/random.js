@@ -39,7 +39,12 @@ function chkry() {
         }
 
         var finalScore = ScoreArray[ScoreArray.length-1];
-        document.getElementById("scoreValue").innerHTML = finalScore;
+        if(finalScore>0){
+            document.getElementById("scoreValue").innerHTML = finalScore;
+        }else{
+            document.getElementById("scoreValue").innerHTML = 0;
+        }
+
 
 
     } else {
@@ -69,7 +74,11 @@ function chkry() {
 
 
         var finalScore = ScoreArray[ScoreArray.length-1];
-        document.getElementById("scoreValue").innerHTML = finalScore;
+        if(finalScore>0){
+            document.getElementById("scoreValue").innerHTML = finalScore;
+        }else{
+            document.getElementById("scoreValue").innerHTML = 0;
+        }
 
 
 
