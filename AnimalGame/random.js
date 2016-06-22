@@ -7,7 +7,7 @@ var ScoreArray = [];
 
 var score_value = 0;
 
-var images = ["img/goat.png", "img/dog.jpg", "img/cat.jpg", "img/cow.jpg"];
+var images = ["http://chkry.github.io/AnimalGame/img/goat.png", "http://chkry.github.io/AnimalGame/img/dog.jpg", "http://chkry.github.io/AnimalGame/img/cat.jpg", "http://chkry.github.io/AnimalGame/img/cow.jpg"];
 
 function chkry() {
 
@@ -22,7 +22,6 @@ function chkry() {
     var storePrevIndex = PushArray(prevIndex);
 
     if (index == -1) {
-
         console.log("index in if condition"+index);
         var randomValue = calculate();
         console.log("RandomValue in if condition"+randomValue);
