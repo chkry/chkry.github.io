@@ -7,7 +7,7 @@ var ScoreArray = [];
 
 var score_value = 0;
 
-var images = ["http://kindersay.com/files/images/goat.png", "http://cdn1-www.dogtime.com/assets/uploads/2011/01/file_23262_entlebucher-mountain-dog-460x290.jpg", "http://animal-dream.com/data_images/cat/cat3.jpg", "http://images.all-free-download.com/images/graphiclarge/cartoon_cow_clip_art_6772.jpg"];
+var images = ["img/goat.png", "img/dog.jpg", "img/cat.jpg", "img/cow.jpg"];
 
 function chkry() {
 
