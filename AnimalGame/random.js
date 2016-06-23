@@ -8,7 +8,7 @@ if (document.images) {
 				img2.src = "http://chkry.github.io/AnimalGame/img/dog.jpg";
 				img3.src = "http://chkry.github.io/AnimalGame/img/cat.jpg";
                 img4.src = "http://chkry.github.io/AnimalGame/img/cow.jpg";
-                img5.src = "http://chkry.github.io/AnimalGame/img/GuessImage.jpg";
+                img5.src = "http://chkry.github.io/AnimalGame/img/guessimage.jpg";
 			}
 
 
@@ -190,7 +190,7 @@ function resetButton(){
     ArrayStore.splice(0,ArrayStore.length);
     score_value = 0;
     ScoreArray.splice(0,ScoreArray.length);
-    document.getElementById("sourceImage").src = "http://chkry.github.io/AnimalGame/img/GuessImage.jpg";
+    document.getElementById("sourceImage").src = "http://chkry.github.io/AnimalGame/img/guessimage.jpg";
 
 
     var radioChecked = document.getElementsByName("radioGroup");
