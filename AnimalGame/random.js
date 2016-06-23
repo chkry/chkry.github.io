@@ -1,16 +1,16 @@
 if (document.images) {
-				img1 = new Image();
-				img2 = new Image();
-				img3 = new Image();
-                img4 = new Image();
-                img5 = new Image();
+    img1 = new Image();
+    img2 = new Image();
+    img3 = new Image();
+    img4 = new Image();
+    img5 = new Image();
 
-				img1.src = "http://chkry.github.io/AnimalGame/img/goat.png";
-				img2.src = "http://chkry.github.io/AnimalGame/img/dog.jpg";
-				img3.src = "http://chkry.github.io/AnimalGame/img/cat.jpg";
-                img4.src = "http://chkry.github.io/AnimalGame/img/cow.jpg";
-                img5.src = "http://chkry.github.io/AnimalGame/img/GuessImage.jpg";
-			}
+    img1.src = "http://chkry.github.io/AnimalGame/img/goat.png";
+    img2.src = "http://chkry.github.io/AnimalGame/img/dog.jpg";
+    img3.src = "http://chkry.github.io/AnimalGame/img/cat.jpg";
+    img4.src = "http://chkry.github.io/AnimalGame/img/cow.jpg";
+    img5.src = "http://chkry.github.io/AnimalGame/img/GuessImage.jpg";
+}
 
 
 document.getElementById("yesButton").addEventListener("click", chkry);
@@ -26,35 +26,35 @@ var images = ["http://chkry.github.io/AnimalGame/img/goat.png", "http://chkry.gi
 function chkry() {
 
     var presentImage = document.getElementById("sourceImage").src;
-    console.log(presentImage);
+    // console.log(presentImage);
 
     var index = images.indexOf(presentImage);
-    console.log(index);
+    // console.log(index);
 
     var prevIndex = images.indexOf(presentImage);
 
     var storePrevIndex = PushArray(prevIndex);
 
     if (index == -1) {
-        console.log("index in if condition"+index);
+        //     console.log("index in if condition"+index);
         var randomValue = calculate();
-        console.log("RandomValue in if condition"+randomValue);
+        //     console.log("RandomValue in if condition"+randomValue);
         var imagesrc = images[randomValue];
-        console.log(imagesrc);
+        //    console.log(imagesrc);
         document.getElementById("sourceImage").src = imagesrc;
 
         var radioValue = handlingRadios()
 
-        console.log("the radio Value is in if condition :" +radioValue);
-        if(radioValue == randomValue){
+        //     console.log("the radio Value is in if condition :" +radioValue);
+        if (radioValue == randomValue) {
             score_value += 1;
             setScore(score_value);
         }
 
-        var finalScore = ScoreArray[ScoreArray.length-1];
-        if(finalScore>0){
+        var finalScore = ScoreArray[ScoreArray.length - 1];
+        if (finalScore > 0) {
             document.getElementById("scoreValue").innerHTML = finalScore;
-        }else{
+        } else {
             document.getElementById("scoreValue").innerHTML = 0;
         }
 
@@ -63,40 +63,40 @@ function chkry() {
     } else {
 
 
-        console.log("index in else condition"+index);
+        // console.log("index in else condition"+index);
 
-        do{
+        do {
             var randomValue = calculate();
-        }while(index == randomValue)
-        console.log("RandomValue in else condition"+randomValue);
+        } while (index == randomValue)
+        //console.log("RandomValue in else condition" + randomValue);
 
         var imagesrc = images[randomValue];
         document.getElementById("sourceImage").src = imagesrc;
 
 
         var radioValue = handlingRadios()
-        console.log("the radio Value is in else condition :" +radioValue);
+        //console.log("the radio Value is in else condition :" + radioValue);
 
 
 
-        if(radioValue == randomValue){
+        if (radioValue == randomValue) {
             score_value += 1;
             setScore(score_value);
         }
 
 
 
-        var finalScore = ScoreArray[ScoreArray.length-1];
-        if(finalScore>0){
+        var finalScore = ScoreArray[ScoreArray.length - 1];
+        if (finalScore > 0) {
             document.getElementById("scoreValue").innerHTML = finalScore;
-        }else{
+        } else {
             document.getElementById("scoreValue").innerHTML = 0;
         }
 
 
 
 
-        if(ArrayStore.length >= 10){
+        if (ArrayStore.length >= 10) {
             document.getElementById("yesButton").disabled = true;
             document.getElementById("yesButton").innerHTML = "GAME OVER";
         }
@@ -108,26 +108,26 @@ function chkry() {
 }
 
 function calculate() {
-        var random = Math.random() * 4;
-        var random = Math.floor(random)
+    var random = Math.random() * 4;
+    var random = Math.floor(random)
     return random;
 
 }
 
 
 
-function setScore(score_value){
+function setScore(score_value) {
 
     ScoreArray.push(score_value);
-    console.log("the score array : "+ScoreArray);
+    //console.log("the score array : " + ScoreArray);
 }
 
 // Storing Values in array
 
-function PushArray(prevIndex){
+function PushArray(prevIndex) {
 
     ArrayStore.push(prevIndex)
-    console.log(ArrayStore);
+    //console.log(ArrayStore);
 }
 
 
@@ -150,17 +150,17 @@ function PushArray(prevIndex){
 
 
 
-function handlingRadios(){
+function handlingRadios() {
     console.log("handlingRadios Triggered");
-var rad = document.radioGroup.myRadios;
-var prev = null;
-for(var i = 0; i < rad.length; i++) {
+    var rad = document.radioGroup.myRadios;
+    var prev = null;
+    for (var i = 0; i < rad.length; i++) {
 
-    if(rad[i].checked){
-        return rad[i].value;
+        if (rad[i].checked) {
+            return rad[i].value;
         }
     };
-    };
+};
 
 
 
@@ -184,18 +184,18 @@ for(var i = 0; i < rad.length; i++) {
 
 document.getElementById("noButton").addEventListener("click", resetButton);
 
-function resetButton(){
+function resetButton() {
     document.getElementById("scoreValue").innerHTML = "0";
     document.getElementById("yesButton").disabled = false;
     document.getElementById("yesButton").innerHTML = "NEXT";
-    ArrayStore.splice(0,ArrayStore.length);
+    ArrayStore.splice(0, ArrayStore.length);
     score_value = 0;
-    ScoreArray.splice(0,ScoreArray.length);
+    ScoreArray.splice(0, ScoreArray.length);
     document.getElementById("sourceImage").src = "http://chkry.github.io/AnimalGame/img/GuessImage.jpg";
 
 
     var radio = document.getElementById("radioGroup");
-    for(x=0;x<radio.length;x++) {
+    for (x = 0; x < radio.length; x++) {
         document.getElementById("radioGroup")[x].checked = false;
     };
     return;
