@@ -84,7 +84,7 @@
 //---------------------------AJAX for tumblr API --------------------[START]---
 function getJSONDataTumblr() {
 
-    var tumblrAPI = "http://api.tumblr.com/v2/blog/chkry.tumblr.com/posts/photo?callback=?";
+    var tumblrAPI = "https://api.tumblr.com/v2/blog/chkry.tumblr.com/posts/photo?callback=?";
 
     $.getJSON(tumblrAPI, {
         api_key: 'ivofJBCOeNzCg3quY2l7PxnMm0w1bCQb7e3X84erImRG9stL1X'
