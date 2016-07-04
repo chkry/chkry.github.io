@@ -49,7 +49,7 @@
   }
   
   #social {
-      display: none;
+      display: inline-block;
       padding-top: 10px;
   }
   
@@ -104,39 +104,22 @@
       padding-bottom: 70vh;
   }
   
-  .hover {
-      border: 1px solid #f3f781;
-      background-color: white;
-  }
+
   
   #social #btndiv a {
-      display: block;
+      display: inline;
       margin: auto;
-      text-decoration: none;
-      text-transform: none;
-      color: #2e2e2e;
-      font-size: 1.2em;
       padding-top: 15px;
   }
   
-  #social #btndiv:hover {
-      border: 1px solid white;
-      box-shadow: 0 0 20px gray;
-  }
+
   
   #social .btn {
       /*    width: 12vw;*/
       font-size: 1.2vw;
   }
   
-  .btnDimension {
-      width: 145px !important;
-      height: 55px;
-      margin: auto;
-      border-radius: 3px;
-      font-size: 1em;
-      font-weight: 600;
-  }
+
   /*--------------First DIV STYLE SHEET END-------------------*/
   /*--------------SECOND DIV STYLE SHEET-------------------*/
   
@@ -318,3 +301,21 @@
       font-family: 'Montserrat', sans-serif;
   }
   /*--------------SIXTH DIV STYLE SHEET END-------------------*/
+
+.btnDimension {
+
+}
+
+#btndiv img{
+    width: 4vw;
+    height: 4vw;
+}
+
+
+
+#btndiv {
+    width: 445px;
+    height: 100px;
+    margin: auto;
+    display: inline;
+}

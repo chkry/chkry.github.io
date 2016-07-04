@@ -64,6 +64,46 @@
            }
        });
 
+
+//Social buttons color changes
+var fbcolor = $('#fbColor');
+var twcolor = $('#twColor');
+var incolor = $('#inColor');
+
+//fbcolor.mouseover(function(){
+//    main.css("background-color","#3b5998");
+//});
+//
+//fbcolor.mouseout(function(){
+//    main.css("background-color","#cf4646");
+//});
+//
+       console.log("Start of over obje");
+       console.log("Mouse over object"+fbcolor.mouseover());
+       console.log("End of over obje");
+
+
+if(fbcolor.mouseenter() == false){
+    main.css("background-color","#3b5998");
+}else if(twcolor.mouseenter() == true){
+    main.css("background-color","#4099FF");
+}else if(incolor.mouseenter()== true){
+    main.css("background-color","#9b6954");
+}else{
+    main.css("background-color","#cf4646");
+}
+
+       var fbColors = document.getElementById('fbColor');
+
+   fbColors.addEventListener("mouseover",function(event){
+         main.css("background-color","#3b5998");
+       console.log("the event is "+Event);
+     });
+
+
+
+
+
 //---------------------------AJAX for tumblr API --------------------[START]---
 
        getJSONDataTumblr();
@@ -113,3 +153,7 @@ function successFn(result) {
     }
 
 //---------------------------AJAX for tumblr API --------------------[END]---
+
+
+
+
