@@ -79,7 +79,7 @@ function getJSONDataTumblr () {
     $.getJSON(tumblrAPI, {
         api_key: 'ivofJBCOeNzCg3quY2l7PxnMm0w1bCQb7e3X84erImRG9stL1X'
         , tags: "chkry"
-        , limit: 21
+        , limit: 20
     }, successFn);
 }
 

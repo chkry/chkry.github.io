@@ -217,6 +217,7 @@
     display: inline-block;
     height:80vh;
     background-color: black;
+    overflow: auto;
 }
 #tumblr img{
     border:1px solid black;
@@ -326,4 +327,8 @@
     height: 100px;
     margin: auto;
     display: inline;
+}
+
+#tPhotos {
+    overflow: auto;
 }
