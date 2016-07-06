@@ -1,11 +1,24 @@
 $("document").ready(function () {
     //jQuery code for all the page
     var main = $('#main'), second = $('#second'), third = $('#third'), fourth = $('#fourth'), fifth = $('#fifth');
-    $("#dream").fadeIn(1400);
-    $("#design").fadeIn(2200);
-    $("#develop").fadeIn(2800);
-    $("#descri").fadeIn(1000);
-    $("#social").fadeIn(1000);
+    var dream = $("#dream"), design = $("#design"),  develop = $("#develop"),descri = $("#descri");
+    var fbcolor = $('#fbColor'), twcolor = $('#twColor'), incolor = $('#inColor');
+
+    main.mouseover(function (){
+
+    descri.fadeIn(1000);
+    dream.fadeIn(1400);
+    design.fadeIn(2200);
+    develop.fadeIn(2800);
+
+    fbcolor.fadeIn(3900);
+    twcolor.fadeIn(4200);
+    incolor.fadeIn(4800);
+    });
+
+
+
+
     //Srolling to division functions.........................................
     $("#logo").click(function () {
         $('html, body').animate({
@@ -46,13 +59,13 @@ $("document").ready(function () {
         }
     });
     //Social buttons color changes
-    var fbcolor = $('#fbColor'), twcolor = $('#twColor'), incolor = $('#inColor');
+
 
     fbcolor.mouseover(function () {
         main.css("background-color", "#3b5998");
     });
     twcolor.mouseover(function () {
-        main.css("background-color", "#4099FF");
+        main.css("background-color", "#00aced");
     });
     incolor.mouseover(function () {
         main.css("background-color", "#9b6954");
@@ -60,7 +73,6 @@ $("document").ready(function () {
     $('#btndiv').mouseout(function () {
         main.css("background-color", "#cf4646");
    });
-
 
     //PURE JS code for same mouse over event
 //    var fbColors = document.getElementById('fbColor');
