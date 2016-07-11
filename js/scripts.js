@@ -41,6 +41,8 @@ $("document").ready(function () {
             scrollTop: main.offset().top
         }, 2000);
     });
+
+
     //       $("#social").click(function() {
     //           $('html, body').animate({
     //               scrollTop: $("#fourth").offset().top

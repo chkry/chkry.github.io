@@ -130,7 +130,7 @@
       font-family: 'Montserrat', sans-serif;
       border-top: 10px solid #FE642E;
       ;
-      background-color: #d8d8d8;
+      background-color: black;
       /*//orange:*/
   }
   
@@ -229,7 +229,6 @@
       width: 100%;
       height: 100vh;
       border-spacing: 0px;
-      background-color: black;
       font-family: 'Montserrat', sans-serif;
   }
   /*--------------THIRDONE DIV STYLE SHEET END-------------------*/
@@ -322,7 +321,7 @@
 
 #endCredit {
     font-size: 1.8vw;
-    margin-top: 17%;
+    margin-top: 18%;
     padding-bottom: 5px;
     font-family: 'Pacifico', cursive;
     color: white;
