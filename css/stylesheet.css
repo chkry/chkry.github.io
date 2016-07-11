@@ -229,7 +229,7 @@
       width: 100%;
       height: 100vh;
       border-spacing: 0px;
-      background-color: orchid;
+      background-color: black;
       font-family: 'Montserrat', sans-serif;
   }
   /*--------------THIRDONE DIV STYLE SHEET END-------------------*/
@@ -311,3 +311,11 @@
   #tPhotos {
       overflow: auto;
   }
+
+#centerQuote {
+    height: 100vh;
+    width:100vw;
+    padding-top: 30vh;
+    display: block;
+    font-size: 4vw;
+}
