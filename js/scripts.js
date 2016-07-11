@@ -35,6 +35,12 @@ $("document").ready(function () {
             scrollTop: fourth.offset().top
         }, 6000);
     });
+
+        $("#endCredit").click(function () {
+        $('html, body').animate({
+            scrollTop: main.offset().top
+        }, 2000);
+    });
     //       $("#social").click(function() {
     //           $('html, body').animate({
     //               scrollTop: $("#fourth").offset().top

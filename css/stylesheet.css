@@ -319,3 +319,16 @@
     display: block;
     font-size: 4vw;
 }
+
+#endCredit {
+    font-size: 1.8vw;
+    margin-top: 17%;
+    padding-bottom: 5px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+
+}
+#endCredit p{
+    float: right;
+    padding-right: 20px;
+}
