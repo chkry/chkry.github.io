@@ -352,3 +352,22 @@
     font-size:2.5vw;
     padding-left: 40vw;
 }
+
+#fifthContainer {
+    width: 100%;
+    height: 20vh;
+    display: inline;
+}
+
+#fifth1,#fifth2,#fifth3 {
+    font-weight: 800;
+    padding-left: 10vw;
+    float:left;
+    margin: auto;
+    display: block;
+    width: 33%;
+    font-family: 'Montserrat', sans-serif;
+    color: #0f0f0f;
+}
+
+
