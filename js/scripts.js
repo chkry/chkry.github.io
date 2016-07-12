@@ -1,10 +1,8 @@
 $("document").ready(function () {
     //jQuery code for all the page
-    var main = $('#main'), second = $('#second'), third = $('#third'), fourth = $('#fourth'), fifth = $('#fifth');
+    var main = $('#main'), second = $('#second'), third = $('#third'),thirdone = $('#thirdone'), fourth = $('#fourth'), fifth = $('#fifth');
     var dream = $("#dream"), design = $("#design"),  develop = $("#develop"),descri = $("#descri");
     var fbcolor = $('#fbColor'), twcolor = $('#twColor'), incolor = $('#inColor');
-
-    main.mouseover(function (){
 
     descri.fadeIn(1000);
     dream.fadeIn(1400);
@@ -14,7 +12,6 @@ $("document").ready(function () {
     fbcolor.fadeIn(3900);
     twcolor.fadeIn(4200);
     incolor.fadeIn(4800);
-    });
 
 
 
@@ -23,17 +20,17 @@ $("document").ready(function () {
     $("#logo").click(function () {
         $('html, body').animate({
             scrollTop: third.offset().top
-        }, 1000);
+        }, 1200);
     });
     $("#aboutButton").click(function () {
         $('html, body').animate({
-            scrollTop: fourth.offset().top
-        }, 3000);
+            scrollTop: thirdone.offset().top
+        }, 1200);
     });
-    $("#descri").click(function () {
+    $("#contButton").click(function () {
         $('html, body').animate({
             scrollTop: fourth.offset().top
-        }, 6000);
+        }, 2000);
     });
 
         $("#endCredit").click(function () {
@@ -48,6 +45,20 @@ $("document").ready(function () {
     //               scrollTop: $("#fourth").offset().top
     //           }, 3000);
     //       });
+
+//    $(window).scroll(function () {
+//
+//        if (main.visible() & thirdone.visible(true) == false) {
+//
+//        $('html, body').animate({
+//            scrollTop: thirdone.offset().top
+//        }, 2000);
+//
+//
+//        }
+//    });
+
+
 
     //Srolling to division functions.........................................
     $(window).scroll(function () {
