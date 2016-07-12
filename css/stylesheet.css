@@ -332,3 +332,7 @@
     float: right;
     padding-right: 20px;
 }
+
+#logo {
+    display: none;
+}

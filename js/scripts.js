@@ -1,9 +1,10 @@
 $("document").ready(function () {
     //jQuery code for all the page
-    var main = $('#main'), second = $('#second'), third = $('#third'),thirdone = $('#thirdone'), fourth = $('#fourth'), fifth = $('#fifth');
+    var main = $('#main'), second = $('#second'), third = $('#third'),thirdone = $('#thirdone'), fourth = $('#fourth'), fifth = $('#fifth'), logo = $("#logo");
     var dream = $("#dream"), design = $("#design"),  develop = $("#develop"),descri = $("#descri");
     var fbcolor = $('#fbColor'), twcolor = $('#twColor'), incolor = $('#inColor');
 
+    logo.fadeIn(1000);
     descri.fadeIn(1000);
     dream.fadeIn(1400);
     design.fadeIn(2200);
