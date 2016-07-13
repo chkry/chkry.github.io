@@ -80,7 +80,6 @@ $("document").ready(function () {
     });
     //Social buttons color changes
 
-
     fbcolor.mouseover(function () {
         main.css("background-color", "#3b5998");
     });
@@ -94,7 +93,7 @@ $("document").ready(function () {
         main.css("background-color", "#cf4646");
    });
 
-    //PURE JS code for same mouse over event
+//PURE JS code for same mouse over event
 //    var fbColors = document.getElementById('fbColor');
 //    fbColors.addEventListener("mouseover", function (event) {
 //        main.css("background-color", "#3b5998");
@@ -102,9 +101,9 @@ $("document").ready(function () {
 //    });
 
 
-    //---------------------------AJAX for tumblr API --------------------[START]---
+//---------------------------AJAX for tumblr API --------------------[START]---
     getJSONDataTumblr();
-    getJSONDataTumblr();
+    getJSONDataTumblr1();
 }); //End of Document Ready Function
 //---------------------------AJAX for tumblr API --------------------[START]---
 function getJSONDataTumblr () {
@@ -115,6 +114,19 @@ function getJSONDataTumblr () {
         , limit: 50
     }, successFn);
 }
+
+
+
+function getJSONDataTumblr1 () {
+    var tumblrAPI = "https://api.tumblr.com/v2/blog/chkry.tumblr.com/posts/photo?callback=?";
+    $.getJSON(tumblrAPI, {
+        api_key: 'ivofJBCOeNzCg3quY2l7PxnMm0w1bCQb7e3X84erImRG9stL1X'
+        , tags: "chkry"
+        , offset:50
+        , limit: 50
+    }, successFn);
+}
+
 
 function successFn(result) {
     console.log("Success function initated");
