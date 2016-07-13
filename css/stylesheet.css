@@ -191,12 +191,13 @@
       position: relative;
       z-index: 10;
       width: 100%;
-      height: 100vh;
+      height: 170vh;
       border-spacing: 0px;
       background-color: #000;
       font-family: 'Montserrat', sans-serif;
-      /*border-top: 10px solid orange;*/
-      border-top: 4vh solid #0B614B;
+/*      border-top: 4vh solid #0B614B;*/
+      overflow: hidden;
+      margin-bottom: -5px;
   }
   
   .thirdheader {
@@ -209,8 +210,8 @@
 
   #tumblr {
       display: inline-block;
-      height: 100vh;
-      width: 100vw;
+      height: 100%;
+      width: 114%;
       background-color: black;
       overflow: auto;
       overflow: hidden;
@@ -234,7 +235,7 @@
       height: 100vh;
       border-spacing: 0px;
       font-family: 'Montserrat', sans-serif;
-      border-top: 4vh solid #0B614B;
+      border-top: 2vh solid #0B614B;
   }
 #thirdone h2 {
     font-weight: 800;
@@ -316,7 +317,7 @@
   }
 
   #tPhotos {
-      overflow: auto;
+      overflow: hidden;
   }
 
 #centerQuote {
@@ -331,7 +332,7 @@
 
 #endCredit {
     font-size: 1.8vw;
-    margin-top: 22%;
+    margin-top: 47vh;
     padding-bottom: 5px;
     font-family: 'Pacifico', cursive;
     color: white;
@@ -379,6 +380,9 @@
     width: 33%;
     font-family: 'Montserrat', sans-serif;
     color: #424242;
+}
+#fifth2 a:hover {
+    color: white;
 }
 #fifth2 img{
     width: 1.2vw;

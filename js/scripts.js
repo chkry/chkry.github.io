@@ -104,6 +104,7 @@ $("document").ready(function () {
 
     //---------------------------AJAX for tumblr API --------------------[START]---
     getJSONDataTumblr();
+    getJSONDataTumblr();
 }); //End of Document Ready Function
 //---------------------------AJAX for tumblr API --------------------[START]---
 function getJSONDataTumblr () {
