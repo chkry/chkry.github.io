@@ -134,7 +134,7 @@ function successFn(result) {
     $.each(result.response.posts, function (i, item) {
         console.log(result.response.posts);
         $.each(item.photos, function (j, item1) {
-            var cdn = item1.alt_sizes[3].url;
+            var cdn = item1.alt_sizes[4].url;
             $("<img>").attr("src", cdn).appendTo("#tPhotos");
             //                console.log(item1.original_size.url);
             //console.log(item1);
