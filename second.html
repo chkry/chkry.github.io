@@ -18,7 +18,7 @@
      #thirdone {
 /*      margin-top: 100vh;*/
       display: block;
-      position: relative;
+/*      position: relative;*/
       color:black;
       z-index: 10;
       width: 100%;
@@ -26,10 +26,31 @@
       border-spacing: 0px;
       font-family: 'Montserrat', sans-serif;
       border-top: 2vh solid #0B614B;
+         background-color: green;
   }
 
+        .colorClass{
+            background-color: red;
+        }
 
+        #widget1{
+            width: 100px;
+            height: 200px;
+        }
+
+
+        #widget2{
+            width:400px;
+            height: 200px;
+        }
+        .blueClass{
+            width: 1000px;
+            height: 300px;
+            background-color: purple;
+        }
     </style>
+
+
 
 
 <body>
@@ -38,13 +59,15 @@
     <div class="dimensions" id="thirdone">
 
 
-        <div id="widget1">
+        <div id="widget1" class="colorClass">I CHANGE
 
         </div>
 
-        <div id="widget2">
+        <div id="widget2" class="colorClass">CLICK ME
 
         </div>
+
+        <button id="chbutton">CLick here</button>
 
 
 
@@ -84,7 +107,19 @@
         </div>
 -->
 
+<script>
 
+   document.getElementById("chbutton").addEventListener("click",chakri);
+
+
+        function chakri(){
+            document.getElementById("widget1").style.backgroundColor = "purple";
+            console.log("test it");
+            document.getElementById("widget1").style.width = "1000px";
+            document.getElementById("widget1").style.height = "1000px";
+            console.log("test it2");
+        };
+    </script>
 
     </div>
     <!--  ....................... Thirdone Class END........................... -->
@@ -92,9 +127,11 @@
 
 
     <!--  ....................... Jquery Funtionality........................... -->
+<!--
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/jquery.visible.min.js"></script>
     <script src="js/scripts.js"></script>
+-->
 </body>
 
 </html>
