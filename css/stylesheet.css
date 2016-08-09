@@ -13,6 +13,7 @@
       /*font-family: 'Montserrat', sans-serif;*/
       /*background-color: #3B0B0B;*/
   }
+/*Temporary adding for minify*/
   /*---------------Animations-----------------------*/
   
   @-webkit-keyframes fadeIn {
@@ -391,3 +392,13 @@
 }
 
 
+/* New About Me */
+
+        #widget1{
+            width:100px;
+        }
+
+
+        #widget2{
+            width: 100px;
+        }
