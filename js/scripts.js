@@ -17,12 +17,13 @@ console.log("THis is aakash temporary code");
 
 
 
-    //Srolling to division functions.........................................
+    //Srolling to division on click functions.........................................
     $("#logo").click(function () {
         $('html, body').animate({
             scrollTop: third.offset().top
         }, 1200);
     });
+
     $("#aboutButton").click(function () {
         $('html, body').animate({
             scrollTop: thirdone.offset().top
@@ -39,6 +40,25 @@ console.log("THis is aakash temporary code");
             scrollTop: main.offset().top
         }, 2000);
     });
+    var counter = true;
+    $(window).scroll(function () {
+
+        while(counter){
+            if(main.visible(true)){
+            $('html, body').animate({
+            scrollTop: thirdone.offset().top
+        }, 2000);
+        }
+        counter = false;
+        }
+
+    });
+
+//     main.click(function () {
+//        $('html, body').animate({
+//            scrollTop: thirdone.offset().top
+//        }, 2000);
+//    });
 
 
     //       $("#social").click(function() {
