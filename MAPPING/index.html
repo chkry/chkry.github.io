@@ -24,15 +24,18 @@
            height: 100vh;
            font-weight: bold;
            font-size: 34px;
-           color: brown;
+           color: white;
 
+       }
+       #main input{
+           color:red;
        }
        #intro{
            display: block;
            margin-top: 50vh;
            color: antiquewhite;
        }
-       #btn{
+       #btn,#inputE{
            display: none;
        }
     </style>
@@ -44,6 +47,7 @@
         <div id="headerWrapper">
 
             <div id="header">+ ADD ELEMENT</div>
+            <input id="inputE" type="text"></input>
             <button id="btn">Submit</button>
         </div>
 
@@ -76,9 +80,9 @@
       //var divElemen = document.createElement("div");
         var submitBtn = document.getElementById("btn").style.display = "inline";
         var btnElemen = document.getElementById("headerWrapper");
-        var goodDiv = document.createElement("INPUT");
-        goodDiv.setAttribute("type","text");
-        btnElemen.replaceChild(goodDiv,addElementBtn);
+        var inputDiv = document.getElementById("inputE");
+        inputDiv.style.display ="inline";
+        addElementBtn.style.display = "none";
 
 
     };
@@ -86,15 +90,13 @@
 
     function submitButtonClicked(){
         var submitBtn = document.getElementById("btn").style.display = "none";
-        var inputBox = document.getElementsByTagName("INPUT");
-        var inputBoxValue = inputBox[0].value;
-        console.log(inputBoxValue);
-        var para = document.createElement("p");
-        console.log(inputBoxValue);
-        var paraTxt = document.createTextNode(inputBoxValue);
-        para.appendChild(paraTxt);
-        var btnElemen = document.getElementById("headerWrapper");
-        btnElemen.replaceChild(para,inputBox);
+        var inputBox = document.getElementById("inputE");
+        console.log(inputBox);
+        var inputBoxValue = inputBox.value;
+        var heade = document.getElementById("header");
+        heade.innerHTML = inputBoxValue;
+        heade.style.display ="inline";
+        inputBox.style.display = "none";
 
     };
 
