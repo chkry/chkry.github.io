@@ -13,7 +13,7 @@ $("document").ready(function () {
     fbcolor.fadeIn(3900);
     twcolor.fadeIn(4200);
     incolor.fadeIn(4800);
-
+console.log("THis is aakash temporary code");
 
 
 
