@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SECOND VIEWPORT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+
+    <script src="skel.js"></script>
+    <script src="skel-viewport.js"></script>
+
+   <style>
+        body{
+            background-color: teal;
+            width:100vw;
+            height: 100vh;
+        }
+       #main {
+           display: block;
+           margin: 0px 45vw;
+           width: 100vw;
+           height: 100vh;
+           font-weight: bold;
+           font-size: 34px;
+           color: white;
+
+       }
+       #main input{
+           color:red;
+       }
+       #intro{
+           display: block;
+           margin-top: 50vh;
+           color: antiquewhite;
+       }
+       #btn,#inputE{
+           display: none;
+       }
+    </style>
+<body>
+
+       <!--  ....................... Thirdone one Class Start........................... -->
+    <div id="main">
+
+        <div id="headerWrapper">
+
+            <div id="header">+ ADD ELEMENT</div>
+            <input id="inputE" type="text"></input>
+            <button id="btn">Submit</button>
+        </div>
+
+
+
+
+
+        <div id="intro">Welcome to MAPPING !</div>
+
+
+
+    </div>
+
+
+
+<script>
+
+
+    //On Click of Add Button
+    var addElementBtn = document.getElementById("header");
+    addElementBtn.addEventListener("click",addElemntButtonFn);
+
+    var submitBtnClick = document.getElementById("btn");
+    submitBtnClick.addEventListener("click",submitButtonClicked);
+
+
+
+    //Functions For CLICK;
+    function addElemntButtonFn(){
+      //var divElemen = document.createElement("div");
+        var submitBtn = document.getElementById("btn").style.display = "inline";
+        var btnElemen = document.getElementById("headerWrapper");
+        var inputDiv = document.getElementById("inputE");
+        inputDiv.style.display ="inline";
+        addElementBtn.style.display = "none";
+
+
+    };
+
+
+    function submitButtonClicked(){
+        var submitBtn = document.getElementById("btn").style.display = "none";
+        var inputBox = document.getElementById("inputE");
+        console.log(inputBox);
+        var inputBoxValue = inputBox.value;
+        var heade = document.getElementById("header");
+        heade.innerHTML = inputBoxValue;
+        heade.style.display ="inline";
+        inputBox.style.display = "none";
+
+    };
+
+
+
+
+
+    skel.viewport({
+	width: 1280,
+	scalable: true
+});
+
+skel.breakpoints({
+	xlarge: "(max-width: 1680px)",
+	large:  "(max-width: 1280px)",
+	medium: "(max-width: 980px)",
+	small:  "(max-width: 736px)",
+	xsmall: "(max-width: 480px)"
+});
+
+    skel.viewport({
+	scalable: true,
+	breakpoints: {
+		medium: {
+			scalable: false
+		},
+		small: {
+			scalable: false
+		}
+	}
+});
+//   document.getElementById("chbutton").addEventListener("click",chakri);
+//
+//
+//        function chakri(){
+//            document.getElementById("widget1").style.backgroundColor = "purple";
+//            console.log("test it");
+//            document.getElementById("widget1").style.width = "400px";
+//            document.getElementById("widget1").style.height = "400px";
+//            console.log("test it2");
+//        };
+    </script>
+
+    </div>
+
+</body>
+
+</html>

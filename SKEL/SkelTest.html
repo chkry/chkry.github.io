@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SECOND VIEWPORT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+    <style>
+        body{
+            background-color: red;
+        }
+    </style>
+    <script src="skel.js"></script>
+    <script src="skel-viewport.js"></script>
+
+
+
+<body>
+
+       <!--  ....................... Thirdone one Class Start........................... -->
+    <div class="dimensions" id="thirdone">
+
+
+
+<script>
+    skel.viewport({
+	width: 1280,
+	scalable: true
+});
+
+kel.breakpoints({
+	xlarge: "(max-width: 1680px)",
+	large:  "(max-width: 1280px)",
+	medium: "(max-width: 980px)",
+	small:  "(max-width: 736px)",
+	xsmall: "(max-width: 480px)"
+});
+
+    skel.viewport({
+	scalable: true,
+	breakpoints: {
+		medium: {
+			scalable: false
+		},
+		small: {
+			scalable: false
+		}
+	}
+});
+//   document.getElementById("chbutton").addEventListener("click",chakri);
+//
+//
+//        function chakri(){
+//            document.getElementById("widget1").style.backgroundColor = "purple";
+//            console.log("test it");
+//            document.getElementById("widget1").style.width = "400px";
+//            document.getElementById("widget1").style.height = "400px";
+//            console.log("test it2");
+//        };
+    </script>
+
+    </div>
+
+</body>
+
+</html>
