@@ -151,6 +151,7 @@ function getJSONDataTumblr1 () {
 function successFn(result) {
     console.log("Success function initated");
     //console.log(result);
+    console.log("The Summary is: "+result.summary)
     $.each(result.response.posts, function (i, item) {
        // console.log(result.response.posts);
         $.each(item.photos, function (j, item1) {
