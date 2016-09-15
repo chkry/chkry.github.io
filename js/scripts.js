@@ -150,9 +150,9 @@ function getJSONDataTumblr1 () {
 
 function successFn(result) {
     console.log("Success function initated");
-    console.log(result);
+    //console.log(result);
     $.each(result.response.posts, function (i, item) {
-        console.log(result.response.posts);
+       // console.log(result.response.posts);
         $.each(item.photos, function (j, item1) {
             var cdn = item1.alt_sizes[3].url;
             $("<img>").attr("src", cdn).appendTo("#tPhotos");
