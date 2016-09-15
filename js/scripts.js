@@ -151,10 +151,10 @@ function getJSONDataTumblr1 () {
 function successFn(result) {
     console.log("Success function initated");
     //console.log(result);
-    console.log(result.response.posts);
+   // console.log(result.response.posts);
     $.each(result.response.posts, function (i, item) {
        //console.log("the summary is :"+item.summary);
-        console.log("the link url is : "+item.link_url);
+       // console.log("the link url is : "+item.link_url);
         var summary = item.summary;
         var linkUrl = item.link_url;
         $.each(item.photos, function (j, item1) {
@@ -162,7 +162,7 @@ function successFn(result) {
          //   $("<img>").attr("src", cdn).attr("title","CHAKRI REDDY").appendTo("#tPhotos");
           //  $("<a>").attr("href",linkUrl)
             //$("#myLink").html('<a href='+linkUrl+'><img src='+cdn+'title='+summary+'/></a>').appendTo("#tPhotos");
-            $("#tPhotos").append('<a href='+linkUrl+' target="_blank"><img src='+cdn+' title='+summary+'></img></a>');
+            $("#tPhotos").append('<a href='+linkUrl+' target="_blank"><img src='+cdn+'></img></a>');
 
          //  $("<img>").attr("src", cdn).attr("title",summary);
 
