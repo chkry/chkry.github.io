@@ -155,7 +155,7 @@ function successFn(result) {
        // console.log(result.response.posts);
         $.each(item.photos, function (j, item1) {
             var cdn = item1.alt_sizes[3].url;
-            $("<img>").attr("src", cdn).appendTo("#tPhotos");
+            $("<img>").attr("src", cdn).attr("title","CHAKRI REDDY").appendTo("#tPhotos");
             //                console.log(item1.original_size.url);
             //console.log(item1);
         });
