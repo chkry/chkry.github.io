@@ -5,26 +5,26 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: chkry/content
+  path: content
   label: Pages
   create: all
   match: "*"
 - type: directory
-  path: chkry/content/posts
+  path: content/posts
   label: Posts
   create: all
   match: "**/*"
 - type: directory
-  path: chkry/content/post
+  path: content/post
   label: Post
   create: all
   match: "**/*"
 - type: directory
-  path: chkry/content/project
+  path: content/project
   label: Project
   create: all
   match: "**/*"
-upload_dir: chkry/static/uploads
+upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
