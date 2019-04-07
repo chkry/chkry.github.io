@@ -1,4 +1,4 @@
-baseURL = "https://www.chakrireddy.com/chkry/"
+baseURL = "http://www.chakrireddy.com/chkry/"
 languageCode = "en-us"
 title = "Chakri Reddy"
 theme = "minimal"
