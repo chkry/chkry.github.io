@@ -6,76 +6,67 @@
     <description>Recent content in Tags on Chakri Reddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.chakrireddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Bootstrap</title>
-      <link>https://www.chakrireddy.com/tags/bootstrap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Basic</title>
+      <link>https://www.chakrireddy.com/tags/basic/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.chakrireddy.com/tags/bootstrap/</guid>
+      <guid>https://www.chakrireddy.com/tags/basic/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Css</title>
-      <link>https://www.chakrireddy.com/tags/css/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chakrireddy.com/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Development</title>
+      <title>development</title>
       <link>https://www.chakrireddy.com/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.chakrireddy.com/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
+      <title>go</title>
       <link>https://www.chakrireddy.com/tags/go/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.chakrireddy.com/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Golang</title>
+      <title>golang</title>
       <link>https://www.chakrireddy.com/tags/golang/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.chakrireddy.com/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Highlight Js</title>
-      <link>https://www.chakrireddy.com/tags/highlight-js/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>template</title>
+      <link>https://www.chakrireddy.com/tags/template/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.chakrireddy.com/tags/highlight-js/</guid>
+      <guid>https://www.chakrireddy.com/tags/template/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Html</title>
-      <link>https://www.chakrireddy.com/tags/html/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>themes</title>
+      <link>https://www.chakrireddy.com/tags/themes/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.chakrireddy.com/tags/html/</guid>
+      <guid>https://www.chakrireddy.com/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hugo</title>
+      <title>hugo</title>
       <link>https://www.chakrireddy.com/tags/hugo/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
@@ -84,16 +75,43 @@
     </item>
     
     <item>
-      <title>Jekyll</title>
-      <link>https://www.chakrireddy.com/tags/jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <title>bootstrap</title>
+      <link>https://www.chakrireddy.com/tags/bootstrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.chakrireddy.com/tags/jekyll/</guid>
+      <guid>https://www.chakrireddy.com/tags/bootstrap/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Js</title>
+      <title>css</title>
+      <link>https://www.chakrireddy.com/tags/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chakrireddy.com/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>highlight-js</title>
+      <link>https://www.chakrireddy.com/tags/highlight-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chakrireddy.com/tags/highlight-js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://www.chakrireddy.com/tags/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chakrireddy.com/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>js</title>
       <link>https://www.chakrireddy.com/tags/js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -102,7 +120,7 @@
     </item>
     
     <item>
-      <title>Responsive</title>
+      <title>responsive</title>
       <link>https://www.chakrireddy.com/tags/responsive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -111,38 +129,11 @@
     </item>
     
     <item>
-      <title>Static Site Generator</title>
-      <link>https://www.chakrireddy.com/tags/static-site-generator/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chakrireddy.com/tags/static-site-generator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Syntax Highlighting</title>
+      <title>syntax-highlighting</title>
       <link>https://www.chakrireddy.com/tags/syntax-highlighting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.chakrireddy.com/tags/syntax-highlighting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Template</title>
-      <link>https://www.chakrireddy.com/tags/template/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chakrireddy.com/tags/template/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://www.chakrireddy.com/tags/themes/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.chakrireddy.com/tags/themes/</guid>
       <description></description>
     </item>
     

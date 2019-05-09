@@ -19,8 +19,67 @@
   </url>
   
   <url>
-    <loc>https://www.chakrireddy.com/post/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://www.chakrireddy.com/posts/goisforlovers/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/tags/basic/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/posts/chkry/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/posts/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/tags/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/tags/development/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/tags/go/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/tags/golang/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/tags/template/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/tags/themes/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -29,22 +88,13 @@
   </url>
   
   <url>
-    <loc>https://www.chakrireddy.com/post/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://www.chakrireddy.com/tags/hugo/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.chakrireddy.com/post/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/post/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/tags/bootstrap/</loc>
+    <loc>https://www.chakrireddy.com/about/</loc>
     <priority>0</priority>
   </url>
   
@@ -54,31 +104,25 @@
   </url>
   
   <url>
-    <loc>https://www.chakrireddy.com/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://www.chakrireddy.com/about/chakri/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/about/hugoisforlovers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/project/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chakrireddy.com/tags/bootstrap/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.chakrireddy.com/tags/css/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/tags/go/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/tags/golang/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -93,36 +137,7 @@
   </url>
   
   <url>
-    <loc>https://www.chakrireddy.com/tags/hugo/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/tags/jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.chakrireddy.com/tags/js/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/post/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/posts/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/project/</loc>
     <priority>0</priority>
   </url>
   
@@ -132,31 +147,7 @@
   </url>
   
   <url>
-    <loc>https://www.chakrireddy.com/tags/static-site-generator/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.chakrireddy.com/tags/syntax-highlighting/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/tags/template/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chakrireddy.com/tags/themes/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
