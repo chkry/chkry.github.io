@@ -5,23 +5,24 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
-  --border: #ece9e9;
+  --background: #f6f9fc;
+  --foreground: #425466;
+  --accent: #0369a1;
+  --muted: #e3e8ee;
+  --border: #d8dee4;
 }
 
 html[data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --muted: #343f60;
-  --border: #ab4b08;
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --accent: #38bdf8;
+  --muted: #334155;
+  --border: #475569;
 }
 
 @theme inline {
-  --font-app: var(--font-google-sans-code);
+  --font-app: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-heading: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
@@ -52,11 +53,15 @@ html[data-theme="dark"] {
 }
 
 @utility max-w-app {
-  @apply max-w-3xl;
+  max-width: 900px; /* Medium's content width + 20% */
 }
 
 @utility app-layout {
   @apply mx-auto w-full max-w-app px-4;
+}
+
+@utility font-heading {
+  font-family: var(--font-heading);
 }
 
 .active-nav {

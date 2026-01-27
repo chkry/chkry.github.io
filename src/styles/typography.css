@@ -2,22 +2,48 @@
 
 @layer base {
   /* ===== Override default Tailwind Typography styles ===== */
+  /* Medium/Netflix Tech Blog style typography */
   .app-prose {
-    @apply prose;
+    @apply prose prose-lg;
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: -0.003em;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    th {
-      @apply mb-3 text-foreground;
+    h1 {
+      @apply mb-4 text-foreground font-heading;
+      font-size: 42px;
+      line-height: 52px;
+      letter-spacing: -0.011em;
+    }
+
+    h2 {
+      @apply mb-3 text-foreground font-heading;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: -0.014em;
+      margin-top: 1.75em;
     }
 
     h3 {
-      @apply italic;
+      @apply mb-3 text-foreground font-heading;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: -0.014em;
+      margin-top: 1.5em;
     }
 
-    p,
+    h4,
+    th {
+      @apply mb-3 text-foreground font-heading;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    p {
+      @apply text-foreground;
+      margin-bottom: 1.25em;
+    }
+
     strong,
     ol,
     ul,

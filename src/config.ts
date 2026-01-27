@@ -1,8 +1,8 @@
 export const SITE = {
   website: "https://www.chakrireddy.com/",
-  author: "Chakri Reddy",
+  author: "Chakradhar Reddy",
   profile: "https://www.linkedin.com/in/chkry/",
-  desc: "Product Guy and Senior Software Engineer G4, Full Stack @GRAB",
+  desc: "Senior Software Engineer G4, Full Stack @GRAB and AI Evangelist. Passionate about building scalable web applications and exploring the latest in AI technology.",
   title: "Chakradhar Reddy",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,

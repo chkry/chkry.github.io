@@ -1,7 +1,7 @@
 ---
 author: Chakri Reddy
-pubDatetime: 2023-03-01T22:40:32Z
-modDatetime: 2023-03-01T22:40:32Z
+pubDatetime: 2025-03-01T22:40:32Z
+modDatetime: 2025-03-01T22:40:32Z
 title: My Journey as a Product Advisor for Era Interfaces
 slug: product-advisor-era-interfaces
 featured: true
