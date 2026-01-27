@@ -2,6 +2,7 @@
 title: "DigitalGram: A Cross-Platform Journaling App for macOS and Android"
 description: "Exploring DigitalGram - a privacy-focused daily journaling application built natively for macOS and Android with Material Design, markdown support, and local-first storage."
 pubDatetime: 2026-01-21T10:00:00+08:00
+featured: true
 tags:
   - macos
   - android
