@@ -56,6 +56,12 @@ const structuredData = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    
+    <!-- Prevent aggressive caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
     <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
@@ -137,6 +143,35 @@ const structuredData = {
     }
 
     <ClientRouter />
+
+    <!-- Clear old Gatsby cache storage to prevent loading stale content -->
+    <script is:inline>
+      (async function() {
+        // Unregister any old service workers (from Gatsby)
+        if ('serviceWorker' in navigator) {
+          const registrations = await navigator.serviceWorker.getRegistrations();
+          for (const registration of registrations) {
+            await registration.unregister();
+          }
+        }
+        
+        // Clear cache storage (removes gatsby-plugin-offline and other old caches)
+        if ('caches' in window) {
+          const cacheNames = await caches.keys();
+          await Promise.all(
+            cacheNames.map(cacheName => caches.delete(cacheName))
+          );
+        }
+        
+        // Clear old Gatsby data from localStorage
+        const gatsbyKeys = Object.keys(localStorage).filter(key => 
+          key.startsWith('gatsby-') || 
+          key.includes('workbox') ||
+          key.includes('sw-')
+        );
+        gatsbyKeys.forEach(key => localStorage.removeItem(key));
+      })().catch(console.error);
+    </script>
 
     <!-- Minimal inline script to prevent FOUC - sets theme immediately -->
     <script is:inline>
