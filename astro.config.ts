@@ -14,6 +14,11 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
+  build: {
+    // Add cache busting with content hashes
+    inlineStylesheets: 'auto',
+    assets: '_astro',
+  },
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
@@ -42,6 +47,21 @@ export default defineConfig({
     plugins: [tailwindcss()],
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
+    },
+    build: {
+      // Enable CSS code splitting for better cache busting
+      cssCodeSplit: true,
+      // Generate manifest for cache busting
+      manifest: true,
+      // Add content hash to filenames
+      rollupOptions: {
+        output: {
+          // Ensure unique filenames for cache busting
+          entryFileNames: '_astro/[name].[hash].js',
+          chunkFileNames: '_astro/[name].[hash].js',
+          assetFileNames: '_astro/[name].[hash][extname]',
+        },
+      },
     },
   },
   image: {
